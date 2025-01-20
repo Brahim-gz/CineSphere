@@ -6,7 +6,6 @@ import FetchData from "./fetchDetailsF";
 import FetchActors from "./fetchActors";
 
 const DetailsF = () => {
-  console.log("API Token:", import.meta.env.VITE_APP_API_TOKEN);
   const { id } = useParams();
   const { data: dataF, isLoading: isLoadingF } = useQuery(
     ["détails", id],
