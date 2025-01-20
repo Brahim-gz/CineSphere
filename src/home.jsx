@@ -1,6 +1,6 @@
 import Film from "./film";
 
-const Home = ({ films, lastModified }) => {
+const Home = ({ films, lastModified, isLoading }) => {
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ const Home = ({ films, lastModified }) => {
     >
       <header>Films</header>
       <main id="home">
-        {!films.length ? (
+        {isLoading ? (
           <div className="Loading">
             <img
               className="Load"
@@ -34,9 +34,11 @@ const Home = ({ films, lastModified }) => {
           })
         )}
       </main>
-      <footer>
-        <span>Dernière modification : {lastModified || "N/A"}</span>
-      </footer>
+      {!isLoading && (
+        <footer>
+          <span>Dernière modification : {lastModified || "N/A"}</span>
+        </footer>
+      )}
     </div>
   );
 };

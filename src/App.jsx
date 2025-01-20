@@ -6,6 +6,7 @@ import FetchFilms from "./fetchFilms";
 import DetailsF from "./detailsFilm";
 import DetailsA from "./detailsActor";
 import { StrictMode } from "react";
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -14,8 +15,10 @@ const queryClient = new QueryClient({
     },
   },
 });
+
 const App = () => {
-  const { films, lastModified } = FetchFilms();
+  const { films, lastModified, isLoading } = FetchFilms();
+
   return (
     <StrictMode>
       <BrowserRouter>
@@ -23,7 +26,13 @@ const App = () => {
           <Routes>
             <Route
               path="/"
-              element={<Home films={films} lastModified={lastModified} />}
+              element={
+                <Home
+                  films={films}
+                  lastModified={lastModified}
+                  isLoading={isLoading}
+                />
+              }
             />
             <Route path="/FilmDétails/:id" element={<DetailsF />} />
             <Route path="/ActorDétails/:id" element={<DetailsA />} />
