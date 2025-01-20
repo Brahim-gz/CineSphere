@@ -1,0 +1,236 @@
+html,body,#root {
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+header {
+  position: fixed;
+  left: 2%;
+  background-color: rgb(249, 115, 48);
+  border: solid 4px;
+  border-radius: 10px;
+  width: 95%;
+  height: 6.5%;
+  font-size: 3em;
+  font-weight:500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 0.5%;
+}
+#actor {
+  border: 4px dashed rgb(249, 115, 48);
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+#role {
+  color: rgb(249, 115, 48);
+  font-weight: bold;
+}
+#actorin {
+  width: 100%;
+  text-align: center;
+  font-size: xxx-large;
+  margin: auto;
+}
+hr {
+  width: 90%;
+  border: 2px solid rgb(249, 115, 48);
+}
+#imgActor {
+  border-radius: 20px;
+}
+h1 {
+  margin: auto;
+  font-size: xxx-large;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+.Link {
+  text-decoration: none;
+  color: black;
+}
+#details {
+  position: fixed;
+  margin-top: 5.7em;
+  left: 2%;
+  border: solid 4px;
+  border-radius: 10px;
+  width: 93%;
+  height: 84%;
+  padding: 1%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#infoF {
+  border: solid 7px rgb(249, 115, 48);
+  border-radius: 10px;
+  width: 98%;
+  min-height: 400px;
+  padding: 5px;
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+#infoA {
+  border: dashed 7px rgb(249, 115, 48);
+  border-radius: 10px;
+  width: 98%;
+  min-height: 400px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+#four {
+  margin-left: 70%;
+  font-size: 25px;
+}
+#custom-icon {
+  font-size: 30px;
+  color: gold;
+  margin-right: 5px;
+}
+#three {
+  margin-left: 2%;
+  font-size: xx-large;
+}
+.a {
+  margin-left: 80%;
+  text-decoration: none;
+  color: white;
+}
+.filmH {
+  padding: 5px;
+  border: solid 4px black;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(249, 115, 48);
+}
+.Loading {
+  width: 25%;
+  margin: auto;
+  margin-top: 8%;
+}
+.Load {
+  scale: 0.4;
+  animation: rotateAnimation 1s linear infinite;
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#filmHR {
+  width: 80%;
+  font-size: xx-large;
+  margin: auto;
+  line-height: 180%;
+}
+#a {
+  color: black;
+}
+#a:hover {
+  color: rgb(249, 115, 48);
+}
+.a:hover {
+  color: rgb(249, 115, 48);
+}
+#one {
+  color: rgb(249, 115, 48);
+  font-size: xxx-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#biography {
+  line-height: 30px;
+  font-size: x-large;
+}
+#rightF {
+  width: 70%;
+  color: white;
+  font-size: x-large;
+  padding: 3%;
+  padding-top: 1%;
+  line-height: 40px;
+  margin: auto;
+}
+#rightA {
+  width: 70%;
+  font-size: x-large;
+  padding: 3%;
+  padding-top: 1%;
+  line-height: 40px;
+  margin: auto;
+}
+#imgF {
+  position: relative;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+#home {
+  position: fixed;
+  margin-top: 5.7em;
+  left: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid 4px;
+  border-radius: 10px;
+  width: 93%;
+  height: 81%;
+  padding: 1%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+h2 {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+}
+div.f {
+  border: solid 8px rgb(249, 115, 48);
+  border-radius: 5px;
+  height: 300px;
+  width: 230px;
+  background-color: rgb(249, 115, 48);
+  overflow: hidden;
+  margin: 11px;
+}
+footer {
+  position: fixed;
+  bottom: 1%;
+  left: 2%;
+  height: 2.5%;
+  width: 95%;
+  border: solid 4px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 0.3em;
+  background-color: rgb(249, 115, 48);
+  font-weight: bold;
+  font-size: 1.1em;
+}
