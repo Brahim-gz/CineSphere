@@ -18,12 +18,13 @@ const DetailsA = () => {
   const films = new Object(dataF);
   if (isLoadingF || isLoadingA) {
     return (
-      <div>
-        <Link to="/" className="Link">
-          <header>
-            <h1>Actor</h1>
-          </header>
-        </Link>
+      <div className="page">
+        <header>
+          {" "}
+          <Link to="/" className="Link">
+            Actor
+          </Link>
+        </header>
         <main id="details">
           <div className="Loading">
             <img
@@ -40,12 +41,12 @@ const DetailsA = () => {
       ? `https://image.tmdb.org/t/p/original${actor.profile_path}`
       : "https://th.bing.com/th/id/OIP.Ze_F6AGBDQyYrlbNF7tCXAHaHa?rs=1&pid=ImgDetMain";
     return (
-      <div>
-        <Link to="/" className="Link">
-          <header>
-            <h1>Actor - {actor.name}</h1>
-          </header>
-        </Link>
+      <div className="page">
+        <header>
+          <Link to="/" className="Link">
+            Actor - {actor.name}
+          </Link>
+        </header>
         <main id="details">
           <div id="infoA">
             <img

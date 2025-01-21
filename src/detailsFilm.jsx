@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Actor from "./actor";
 import FetchData from "./fetchDetailsF";
@@ -11,7 +11,7 @@ const DetailsF = () => {
     ["détails", id],
     FetchData
   );
-  const film = new Object(dataF)
+  const film = new Object(dataF);
   const { data: dataA, isLoading: isLoadingA } = useQuery(
     ["détailsA", id],
     FetchActors
@@ -19,12 +19,12 @@ const DetailsF = () => {
   const actors = new Object(dataA);
   if (isLoadingF || isLoadingA) {
     return (
-      <div>
-        <Link to="/" className="Link">
-          <header>
-            <h1>Film</h1>
-          </header>
-        </Link>
+      <div className="page">
+        <header>
+          <Link to="/" className="Link">
+            Film
+          </Link>
+        </header>
         <main id="details">
           <div className="Loading">
             <img
@@ -41,12 +41,12 @@ const DetailsF = () => {
       ? `https://image.tmdb.org/t/p/original${film.poster_path}`
       : "https://th.bing.com/th/id/OIP.6VHlKbRfkQyZXuBGQUVL-AHaHa?pid=ImgDet&w=200&h=200&c=7&dpr=1.1";
     return (
-      <div>
-        <Link to="/" className="Link">
-          <header>
-            <h1>Films - {film.title}</h1>
-          </header>
-        </Link>
+      <div className="page">
+        <header>
+          <Link to="/" className="Link">
+            Films - {film.title}
+          </Link>
+        </header>
         <main id="details">
           <div id="infoF">
             <img

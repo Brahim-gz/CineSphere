@@ -2,15 +2,7 @@ import Film from "./film";
 
 const Home = ({ films, lastModified, isLoading }) => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-      }}
-    >
+    <div className="page">
       <header>Films</header>
       <main id="home">
         {isLoading ? (
